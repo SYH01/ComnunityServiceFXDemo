@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="454.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.Controller.RegisterController">
+    <children>
+        <Text layoutX="173.0" layoutY="65.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Register" textAlignment="CENTER" wrappingWidth="107.30029296875">
+            <font>
+                <Font size="24.0" />
+            </font>
+        </Text>
+        <TextField fx:id="textField" layoutX="142.0" layoutY="131.0" promptText="注册账号" />
+        <PasswordField fx:id="passwordField" layoutX="142.0" layoutY="184.0" promptText="密码" />
+        <Button fx:id="button" layoutX="202.0" layoutY="267.0" mnemonicParsing="false" onAction="#register" text="确定" />
+    </children>
+</AnchorPane>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="CENTER" prefHeight="397.0" prefWidth="599.0" spacing="20.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.Controller.LoginController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+    <children>
+        <AnchorPane prefHeight="383.0" prefWidth="541.0">
+            <children>
+                <TextField fx:id="idField" layoutX="31.0" layoutY="120.0" prefHeight="23.0" prefWidth="187.0" promptText="账号" />
+            <PasswordField fx:id="passwordField" layoutX="31.0" layoutY="167.0" prefHeight="23.0" prefWidth="187.0" promptText="密码" />
+                <Button layoutX="31.0" layoutY="262.0" onAction="#login" text="确定" />
+                <Button layoutX="178.0" layoutY="262.0" mnemonicParsing="false" onAction="#register" text="注册" />
+                <Text layoutX="97.0" layoutY="86.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Login">
+                    <font>
+                        <Font size="26.0" />
+                    </font>
+                </Text>
+            <Group layoutX="31.0" layoutY="218.0" AnchorPane.leftAnchor="31.0" AnchorPane.topAnchor="222.0">
+               <children>
+                  <RadioButton fx:id="radioButton1" layoutY="4.0" mnemonicParsing="false" onMouseClicked="#loginChoice1" prefHeight="20.0" prefWidth="88.0" selected="true" text="党员">
+                     <toggleGroup>
+                        <ToggleGroup fx:id="toggleGroup" />
+                     </toggleGroup>
+                  </RadioButton>
+                  <RadioButton fx:id="radioButton2" layoutX="119.0" layoutY="4.0" mnemonicParsing="false" onMouseClicked="#loginChoice2" prefHeight="20.0" prefWidth="74.0" text="管理员" toggleGroup="$toggleGroup" />
+               </children>
+               <rotationAxis>
+                  <Point3D />
+               </rotationAxis>
+            </Group>
+            <TextArea editable="false" layoutX="225.0" layoutY="77.0" prefHeight="184.0" prefWidth="336.0" style="-fx-background-color: #FFFFFF;" text="▬▬▬▬.◙.▬▬▬▬  &#10;         ▂▄▄▓▄▄▂&#10;     ◢◤ █▀▀████▄▄▄▄◢◤ &#10;   █孙氏党团专用飞机█▀▀▀▀▀▀▀╬ &#10;     ◥███████◤&#10;      ══╩══╩═══">
+               <font>
+                  <Font size="19.0" />
+               </font></TextArea>
+            </children>
+        </AnchorPane>
+    </children>
+</VBox>

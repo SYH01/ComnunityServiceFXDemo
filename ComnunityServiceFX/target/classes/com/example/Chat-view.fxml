@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="529.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.Controller.UDPChatController">
+   <children>
+      <TextArea fx:id="textArea01" editable="false" layoutX="14.0" layoutY="14.0" prefHeight="322.0" prefWidth="428.0" promptText="聊天内容" />
+      <TextArea fx:id="textArea02" layoutX="15.0" layoutY="356.0" prefHeight="125.0" prefWidth="428.0" promptText="请输入信息发送" />
+      <Button fx:id="button" layoutX="362.0" layoutY="491.0" mnemonicParsing="false" onAction="#enterSend" text="确定发送" />
+      <Text layoutX="477.0" layoutY="164.0" strokeType="OUTSIDE" strokeWidth="0.0" text="功能区" wrappingWidth="93.30029296875">
+         <font>
+            <Font size="75.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

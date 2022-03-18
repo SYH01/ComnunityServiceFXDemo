@@ -1,0 +1,18 @@
+<component name="libraryTable">
+  <library name="Maven: org.openjfx:javafx-controls:win:17.0.0.1">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/openjfx/javafx-controls/17.0.0.1/javafx-controls-17.0.0.1-win.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/org/openjfx/javafx-controls/17.0.0.1/javafx-controls-17.0.0.1-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/openjfx/javafx-controls/17.0.0.1/javafx-controls-17.0.0.1-sources.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/openjfx/javafx-controls/17.0.0.1/javafx-controls-17.0.0.1-win.jar!/" />
+      <root url="file://$MAVEN_REPOSITORY$/org/openjfx/javafx-controls/17.0.0.1" />
+      <root url="file://$MAVEN_REPOSITORY$/org/openjfx/javafx-controls/11.0.1" />
+      <root url="file://$PROJECT_DIR$/../../openjfx-17.0.0.1_windows-x64_bin-sdk/javafx-sdk-17.0.0.1/legal/javafx.controls" />
+      <root url="jar://$PROJECT_DIR$/../../openjfx-17.0.0.1_windows-x64_bin-sdk.zip!/" />
+    </SOURCES>
+  </library>
+</component>

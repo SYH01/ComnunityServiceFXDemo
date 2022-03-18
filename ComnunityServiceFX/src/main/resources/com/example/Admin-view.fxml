@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="742.0" prefWidth="912.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.Controller.AdminController">
+    <children>
+        <Label layoutX="43.0" layoutY="14.0" prefHeight="69.0" prefWidth="818.0" style="-fx-background-color: #FFFFFF;" text="社区党群服务中心管理员系统—Admin">
+            <font>
+                <Font size="37.0" />
+            </font>
+        </Label>
+        <AnchorPane layoutX="43.0" layoutY="80.0" minHeight="0.0" minWidth="0.0" prefHeight="591.0" prefWidth="818.0">
+            <children>
+                <TabPane blendMode="BLUE" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" pickOnBounds="false" prefHeight="591.0" prefWidth="818.0" rotateGraphic="true" style="-fx-background-color: #ABC0D5;" tabClosingPolicy="UNAVAILABLE" tabMinWidth="50.0">
+                    <tabs>
+                        <Tab onSelectionChanged="#refreshTableNotice" text="公告信息">
+                            <content>
+                                <AnchorPane prefHeight="468.0" prefWidth="818.0" style="-fx-background-color: #FFFFFF;">
+                                    <children>
+                                        <TextArea fx:id="textArea1" layoutX="108.0" layoutY="311.0" prefHeight="134.0" prefWidth="608.0" promptText="输入新的公告内容......." />
+                              <Button layoutX="339.0" layoutY="486.0" mnemonicParsing="false" onAction="#insertNotice" text="               提交             " />
+                              <TableView fx:id="tableView0" layoutX="108.0" layoutY="26.0" prefHeight="200.0" prefWidth="604.0">
+                                <columns>
+                                  <TableColumn fx:id="time" minWidth="-Infinity" prefWidth="300.0" text="时间" />
+                                  <TableColumn fx:id="content0" minWidth="-1.0" prefWidth="300.0" text="公告内容" />
+                                </columns>
+                              </TableView>
+                              <Button layoutX="377.0" layoutY="233.0" mnemonicParsing="false" onAction="#deleteSelected" text="删除选中" />
+                              <Line endX="610.2000122070312" endY="3.0517578125E-5" layoutX="210.0" layoutY="281.0" startX="-205.8000030517578" startY="6.103515625E-5" />
+                                    </children>
+                                </AnchorPane>
+                            </content>
+                        </Tab>
+                        <Tab onSelectionChanged="#refreshTableAppeal" text="困难诉求">
+                            <content>
+                                <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                                    <children>
+                                        <Text layoutX="348.0" layoutY="47.0" strokeType="OUTSIDE" strokeWidth="0.0" text="诉求信息">
+                                            <font>
+                                                <Font size="24.0" />
+                                            </font>
+                                        </Text>
+                              <TableView fx:id="tableView" layoutX="75.0" layoutY="69.0" prefHeight="417.0" prefWidth="642.0">
+                                <columns>
+                                  <TableColumn fx:id="number" prefWidth="100.0" text="编号" />
+                                  <TableColumn fx:id="title" prefWidth="100.0" text="标题" />
+                                    <TableColumn fx:id="content" prefWidth="140.0" text="内容" />
+                                    <TableColumn fx:id="date" prefWidth="100.0" text="日期" />
+                                    <TableColumn fx:id="remark" prefWidth="100.0" text="备注" />
+                                    <TableColumn fx:id="name" prefWidth="100.0" text="诉求人" />
+                                </columns>
+                              </TableView>
+                              <Button layoutX="382.0" layoutY="510.0" mnemonicParsing="false" onAction="#deleteSelected00" text="删除选中" />
+                                    </children>
+                                </AnchorPane>
+                            </content>
+                        </Tab>
+                        <Tab onSelectionChanged="#refreshTableEvent" text="活动会议">
+                            <content>
+                                <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                                    <children>
+                                        <Text layoutX="361.0" layoutY="48.0" strokeType="OUTSIDE" strokeWidth="0.0" text="活动会议">
+                                            <font>
+                                                <Font size="24.0" />
+                                            </font>
+                                        </Text>
+                              <TableView fx:id="tableView2" layoutX="33.0" layoutY="73.0" prefHeight="428.0" prefWidth="752.0">
+                                <columns>
+                                  <TableColumn fx:id="eventNumber2" prefWidth="90.0" text="活动编号" />
+                                  <TableColumn fx:id="title2" prefWidth="90.0" text="标题" />
+                                    <TableColumn fx:id="address2" prefWidth="90.0" text="地址" />
+                                    <TableColumn fx:id="eventDate2" prefWidth="90.0" text="活动日期" />
+                                    <TableColumn fx:id="number2" prefWidth="90.0" text="报名编号" />
+                                    <TableColumn fx:id="reason2" prefWidth="120.0" text="报名原因" />
+                                    <TableColumn fx:id="date2" prefWidth="90.0" text="报名日期" />
+                                    <TableColumn fx:id="name2" prefWidth="90.0" text="报名人" />
+                                </columns>
+                              </TableView>
+                              <Button layoutX="382.0" layoutY="517.0" mnemonicParsing="false" onAction="#deleteSelected02" text="删除选中" />
+                                    </children></AnchorPane>
+                            </content>
+                        </Tab>
+                        <Tab onSelectionChanged="#refreshTableEquiplace" text="场地设备">
+                            <content>
+                                <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                                    <children>
+                                        <Text layoutX="327.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" text="场地设备申请" wrappingWidth="162.30029296875">
+                                            <font>
+                                                <Font size="24.0" />
+                                            </font>
+                                        </Text>
+                              <TableView fx:id="tableView3" layoutX="82.0" layoutY="68.0" prefHeight="417.0" prefWidth="653.0">
+                                 <columns>
+                                    <TableColumn fx:id="name3" prefWidth="100.0" text="名称" />
+                                    <TableColumn fx:id="type3" prefWidth="100.0" text="类型" />
+                                    <TableColumn fx:id="use3" prefWidth="100.0" text="用途" />
+                                    <TableColumn fx:id="remark3" prefWidth="100.0" text="备注" />
+                                    <TableColumn fx:id="state3" prefWidth="100.0" text="状态" />
+                                    <TableColumn fx:id="introduce3" prefWidth="150.0" text="介绍" />
+                                 </columns>
+                              </TableView>
+                              <Button layoutX="381.0" layoutY="503.0" mnemonicParsing="false" onAction="#deleteSelected03" text="删除选中" />
+                                    </children></AnchorPane>
+                            </content>
+                        </Tab>
+                        <Tab onSelectionChanged="#startUDPServer" text="在线聊天">
+                            <content>
+                                <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                           <children>
+                              <TextArea fx:id="textArea01" editable="false" layoutX="166.0" layoutY="14.0" prefHeight="279.0" prefWidth="452.0" promptText="聊天内容" />
+                              <TextArea fx:id="textArea02" layoutX="166.0" layoutY="309.0" prefHeight="146.0" prefWidth="455.0" promptText="请输入" />
+                              <Button layoutX="541.0" layoutY="489.0" mnemonicParsing="false" onAction="#send" text="  发  送  " />
+                           </children></AnchorPane>
+                            </content>
+                        </Tab>
+                    </tabs>
+                </TabPane>
+            </children>
+        </AnchorPane>
+        <Text layoutX="782.0" layoutY="55.0" strokeType="OUTSIDE" strokeWidth="0.0" text="退出登录" underline="true" />
+    </children>
+</AnchorPane>
